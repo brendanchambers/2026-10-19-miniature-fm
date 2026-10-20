@@ -1,0 +1,13 @@
+[project]
+name = "2026-10-19-miniature-fm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pillow",
+    "tqdm",
+    "torch",
+    "matplotlib",
+]

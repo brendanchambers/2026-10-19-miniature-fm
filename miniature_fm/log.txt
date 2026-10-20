@@ -1,0 +1,404 @@
+Using device: cpu
+TrainingData loaded; 3988 images in 62 batches
+Validation data loaded; 128 images in 2 batches
+Epoch 000/200 | Loss: 1.0437 | Val Loss: 0.8438 | LR: 8.00e-04
+Generated 8 samples
+Epoch 001/200 | Loss: 0.6617 | Val Loss: 0.4076 | LR: 8.00e-04
+Generated 8 samples
+Epoch 002/200 | Loss: 0.3866 | Val Loss: 0.2576 | LR: 8.00e-04
+Generated 8 samples
+Epoch 003/200 | Loss: 0.2826 | Val Loss: 0.2226 | LR: 7.99e-04
+Generated 8 samples
+Epoch 004/200 | Loss: 0.2441 | Val Loss: 0.1919 | LR: 7.99e-04
+Generated 8 samples
+Epoch 005/200 | Loss: 0.2193 | Val Loss: 0.1613 | LR: 7.98e-04
+Generated 8 samples
+Epoch 006/200 | Loss: 0.2030 | Val Loss: 0.1819 | LR: 7.98e-04
+Generated 8 samples
+Epoch 007/200 | Loss: 0.1906 | Val Loss: 0.1560 | LR: 7.97e-04
+Generated 8 samples
+Epoch 008/200 | Loss: 0.1855 | Val Loss: 0.1543 | LR: 7.96e-04
+Generated 8 samples
+Epoch 009/200 | Loss: 0.1774 | Val Loss: 0.1463 | LR: 7.95e-04
+Generated 8 samples
+Epoch 010/200 | Loss: 0.1661 | Val Loss: 0.1443 | LR: 7.94e-04
+Generated 8 samples
+Epoch 011/200 | Loss: 0.1581 | Val Loss: 0.1350 | LR: 7.93e-04
+Generated 8 samples
+Epoch 012/200 | Loss: 0.1546 | Val Loss: 0.1153 | LR: 7.92e-04
+Generated 8 samples
+Epoch 013/200 | Loss: 0.1492 | Val Loss: 0.1268 | LR: 7.90e-04
+Generated 8 samples
+Epoch 014/200 | Loss: 0.1462 | Val Loss: 0.1551 | LR: 7.89e-04
+Generated 8 samples
+Epoch 015/200 | Loss: 0.1436 | Val Loss: 0.1314 | LR: 7.87e-04
+Generated 8 samples
+Epoch 016/200 | Loss: 0.1416 | Val Loss: 0.1178 | LR: 7.86e-04
+Generated 8 samples
+Epoch 017/200 | Loss: 0.1355 | Val Loss: 0.1271 | LR: 7.84e-04
+Generated 8 samples
+Epoch 018/200 | Loss: 0.1352 | Val Loss: 0.1360 | LR: 7.82e-04
+Generated 8 samples
+Epoch 019/200 | Loss: 0.1341 | Val Loss: 0.1167 | LR: 7.80e-04
+Generated 8 samples
+Epoch 020/200 | Loss: 0.1317 | Val Loss: 0.1597 | LR: 7.78e-04
+Generated 8 samples
+Epoch 021/200 | Loss: 0.1235 | Val Loss: 0.1080 | LR: 7.76e-04
+Generated 8 samples
+Epoch 022/200 | Loss: 0.1206 | Val Loss: 0.1034 | LR: 7.74e-04
+Generated 8 samples
+Epoch 023/200 | Loss: 0.1313 | Val Loss: 0.1077 | LR: 7.72e-04
+Generated 8 samples
+Epoch 024/200 | Loss: 0.1245 | Val Loss: 0.0929 | LR: 7.70e-04
+Generated 8 samples
+Epoch 025/200 | Loss: 0.1248 | Val Loss: 0.1083 | LR: 7.67e-04
+Generated 8 samples
+Epoch 026/200 | Loss: 0.1186 | Val Loss: 0.1065 | LR: 7.65e-04
+Generated 8 samples
+Epoch 027/200 | Loss: 0.1153 | Val Loss: 0.0924 | LR: 7.62e-04
+Generated 8 samples
+Epoch 028/200 | Loss: 0.1124 | Val Loss: 0.0960 | LR: 7.59e-04
+Generated 8 samples
+Epoch 029/200 | Loss: 0.1088 | Val Loss: 0.0935 | LR: 7.56e-04
+Generated 8 samples
+Epoch 030/200 | Loss: 0.1088 | Val Loss: 0.1138 | LR: 7.54e-04
+Generated 8 samples
+Epoch 031/200 | Loss: 0.1085 | Val Loss: 0.0992 | LR: 7.51e-04
+Generated 8 samples
+Epoch 032/200 | Loss: 0.1124 | Val Loss: 0.1099 | LR: 7.47e-04
+Generated 8 samples
+Epoch 033/200 | Loss: 0.1082 | Val Loss: 0.0984 | LR: 7.44e-04
+Generated 8 samples
+Epoch 034/200 | Loss: 0.1057 | Val Loss: 0.0891 | LR: 7.41e-04
+Generated 8 samples
+Epoch 035/200 | Loss: 0.1082 | Val Loss: 0.0856 | LR: 7.38e-04
+Generated 8 samples
+Epoch 036/200 | Loss: 0.1034 | Val Loss: 0.0856 | LR: 7.34e-04
+Generated 8 samples
+Epoch 037/200 | Loss: 0.1034 | Val Loss: 0.1051 | LR: 7.31e-04
+Generated 8 samples
+Epoch 038/200 | Loss: 0.1059 | Val Loss: 0.1074 | LR: 7.27e-04
+Generated 8 samples
+Epoch 039/200 | Loss: 0.1020 | Val Loss: 0.0809 | LR: 7.24e-04
+Generated 8 samples
+Epoch 040/200 | Loss: 0.1036 | Val Loss: 0.0825 | LR: 7.20e-04
+Generated 8 samples
+Epoch 041/200 | Loss: 0.1015 | Val Loss: 0.0812 | LR: 7.16e-04
+Generated 8 samples
+Epoch 042/200 | Loss: 0.1013 | Val Loss: 0.0716 | LR: 7.12e-04
+Generated 8 samples
+Epoch 043/200 | Loss: 0.1027 | Val Loss: 0.0828 | LR: 7.08e-04
+Generated 8 samples
+Epoch 044/200 | Loss: 0.0966 | Val Loss: 0.0930 | LR: 7.04e-04
+Generated 8 samples
+Epoch 045/200 | Loss: 0.0970 | Val Loss: 0.0817 | LR: 7.00e-04
+Generated 8 samples
+Epoch 046/200 | Loss: 0.1010 | Val Loss: 0.0822 | LR: 6.96e-04
+Generated 8 samples
+Epoch 047/200 | Loss: 0.0957 | Val Loss: 0.0922 | LR: 6.92e-04
+Generated 8 samples
+Epoch 048/200 | Loss: 0.0962 | Val Loss: 0.0841 | LR: 6.87e-04
+Generated 8 samples
+Epoch 049/200 | Loss: 0.0966 | Val Loss: 0.0847 | LR: 6.83e-04
+Generated 8 samples
+Epoch 050/200 | Loss: 0.0929 | Val Loss: 0.0947 | LR: 6.78e-04
+Generated 8 samples
+Epoch 051/200 | Loss: 0.0932 | Val Loss: 0.0953 | LR: 6.74e-04
+Generated 8 samples
+Epoch 052/200 | Loss: 0.0976 | Val Loss: 0.0859 | LR: 6.69e-04
+Generated 8 samples
+Epoch 053/200 | Loss: 0.0923 | Val Loss: 0.0795 | LR: 6.65e-04
+Generated 8 samples
+Epoch 054/200 | Loss: 0.0922 | Val Loss: 0.0750 | LR: 6.60e-04
+Generated 8 samples
+Epoch 055/200 | Loss: 0.0935 | Val Loss: 0.0799 | LR: 6.55e-04
+Generated 8 samples
+Epoch 056/200 | Loss: 0.0884 | Val Loss: 0.0868 | LR: 6.50e-04
+Generated 8 samples
+Epoch 057/200 | Loss: 0.0929 | Val Loss: 0.0774 | LR: 6.45e-04
+Generated 8 samples
+Epoch 058/200 | Loss: 0.0895 | Val Loss: 0.0925 | LR: 6.40e-04
+Generated 8 samples
+Epoch 059/200 | Loss: 0.0908 | Val Loss: 0.0764 | LR: 6.35e-04
+Generated 8 samples
+Epoch 060/200 | Loss: 0.0898 | Val Loss: 0.0849 | LR: 6.30e-04
+Generated 8 samples
+Epoch 061/200 | Loss: 0.0873 | Val Loss: 0.0697 | LR: 6.25e-04
+Generated 8 samples
+Epoch 062/200 | Loss: 0.0890 | Val Loss: 0.0702 | LR: 6.20e-04
+Generated 8 samples
+Epoch 063/200 | Loss: 0.0899 | Val Loss: 0.0866 | LR: 6.14e-04
+Generated 8 samples
+Epoch 064/200 | Loss: 0.0893 | Val Loss: 0.0987 | LR: 6.09e-04
+Generated 8 samples
+Epoch 065/200 | Loss: 0.0894 | Val Loss: 0.1019 | LR: 6.04e-04
+Generated 8 samples
+Epoch 066/200 | Loss: 0.0877 | Val Loss: 0.0768 | LR: 5.98e-04
+Generated 8 samples
+Epoch 067/200 | Loss: 0.0868 | Val Loss: 0.0785 | LR: 5.93e-04
+Generated 8 samples
+Epoch 068/200 | Loss: 0.0835 | Val Loss: 0.0698 | LR: 5.87e-04
+Generated 8 samples
+Epoch 069/200 | Loss: 0.0849 | Val Loss: 0.0854 | LR: 5.82e-04
+Generated 8 samples
+Epoch 070/200 | Loss: 0.0851 | Val Loss: 0.1013 | LR: 5.76e-04
+Generated 8 samples
+Epoch 071/200 | Loss: 0.0857 | Val Loss: 0.0737 | LR: 5.70e-04
+Generated 8 samples
+Epoch 072/200 | Loss: 0.0899 | Val Loss: 0.0801 | LR: 5.65e-04
+Generated 8 samples
+Epoch 073/200 | Loss: 0.0836 | Val Loss: 0.0781 | LR: 5.59e-04
+Generated 8 samples
+Epoch 074/200 | Loss: 0.0852 | Val Loss: 0.0776 | LR: 5.53e-04
+Generated 8 samples
+Epoch 075/200 | Loss: 0.0837 | Val Loss: 0.0850 | LR: 5.47e-04
+Generated 8 samples
+Epoch 076/200 | Loss: 0.0852 | Val Loss: 0.0732 | LR: 5.41e-04
+Generated 8 samples
+Epoch 077/200 | Loss: 0.0819 | Val Loss: 0.0810 | LR: 5.35e-04
+Generated 8 samples
+Epoch 078/200 | Loss: 0.0839 | Val Loss: 0.0847 | LR: 5.30e-04
+Generated 8 samples
+Epoch 079/200 | Loss: 0.0812 | Val Loss: 0.0837 | LR: 5.24e-04
+Generated 8 samples
+Epoch 080/200 | Loss: 0.0836 | Val Loss: 0.0753 | LR: 5.18e-04
+Generated 8 samples
+Epoch 081/200 | Loss: 0.0838 | Val Loss: 0.0620 | LR: 5.12e-04
+Generated 8 samples
+Epoch 082/200 | Loss: 0.0847 | Val Loss: 0.0941 | LR: 5.06e-04
+Generated 8 samples
+Epoch 083/200 | Loss: 0.0810 | Val Loss: 0.0684 | LR: 4.99e-04
+Generated 8 samples
+Epoch 084/200 | Loss: 0.0791 | Val Loss: 0.0692 | LR: 4.93e-04
+Generated 8 samples
+Epoch 085/200 | Loss: 0.0779 | Val Loss: 0.0657 | LR: 4.87e-04
+Generated 8 samples
+Epoch 086/200 | Loss: 0.0826 | Val Loss: 0.0677 | LR: 4.81e-04
+Generated 8 samples
+Epoch 087/200 | Loss: 0.0791 | Val Loss: 0.0689 | LR: 4.75e-04
+Generated 8 samples
+Epoch 088/200 | Loss: 0.0829 | Val Loss: 0.0678 | LR: 4.69e-04
+Generated 8 samples
+Epoch 089/200 | Loss: 0.0844 | Val Loss: 0.0645 | LR: 4.63e-04
+Generated 8 samples
+Epoch 090/200 | Loss: 0.0780 | Val Loss: 0.0837 | LR: 4.56e-04
+Generated 8 samples
+Epoch 091/200 | Loss: 0.0788 | Val Loss: 0.1006 | LR: 4.50e-04
+Generated 8 samples
+Epoch 092/200 | Loss: 0.0793 | Val Loss: 0.0834 | LR: 4.44e-04
+Generated 8 samples
+Epoch 093/200 | Loss: 0.0782 | Val Loss: 0.0874 | LR: 4.38e-04
+Generated 8 samples
+Epoch 094/200 | Loss: 0.0798 | Val Loss: 0.0732 | LR: 4.31e-04
+Generated 8 samples
+Epoch 095/200 | Loss: 0.0769 | Val Loss: 0.0804 | LR: 4.25e-04
+Generated 8 samples
+Epoch 096/200 | Loss: 0.0818 | Val Loss: 0.0714 | LR: 4.19e-04
+Generated 8 samples
+Epoch 097/200 | Loss: 0.0770 | Val Loss: 0.0859 | LR: 4.13e-04
+Generated 8 samples
+Epoch 098/200 | Loss: 0.0776 | Val Loss: 0.0834 | LR: 4.06e-04
+Generated 8 samples
+Epoch 099/200 | Loss: 0.0765 | Val Loss: 0.0750 | LR: 4.00e-04
+Generated 8 samples
+Epoch 100/200 | Loss: 0.0770 | Val Loss: 0.0666 | LR: 3.94e-04
+Generated 8 samples
+Epoch 101/200 | Loss: 0.0753 | Val Loss: 0.0647 | LR: 3.87e-04
+Generated 8 samples
+Epoch 102/200 | Loss: 0.0773 | Val Loss: 0.0761 | LR: 3.81e-04
+Generated 8 samples
+Epoch 103/200 | Loss: 0.0786 | Val Loss: 0.0777 | LR: 3.75e-04
+Generated 8 samples
+Epoch 104/200 | Loss: 0.0794 | Val Loss: 0.0808 | LR: 3.69e-04
+Generated 8 samples
+Epoch 105/200 | Loss: 0.0780 | Val Loss: 0.0652 | LR: 3.62e-04
+Generated 8 samples
+Epoch 106/200 | Loss: 0.0783 | Val Loss: 0.0845 | LR: 3.56e-04
+Generated 8 samples
+Epoch 107/200 | Loss: 0.0777 | Val Loss: 0.0792 | LR: 3.50e-04
+Generated 8 samples
+Epoch 108/200 | Loss: 0.0773 | Val Loss: 0.0703 | LR: 3.44e-04
+Generated 8 samples
+Epoch 109/200 | Loss: 0.0774 | Val Loss: 0.0775 | LR: 3.37e-04
+Generated 8 samples
+Epoch 110/200 | Loss: 0.0767 | Val Loss: 0.0799 | LR: 3.31e-04
+Generated 8 samples
+Epoch 111/200 | Loss: 0.0720 | Val Loss: 0.0708 | LR: 3.25e-04
+Generated 8 samples
+Epoch 112/200 | Loss: 0.0751 | Val Loss: 0.0729 | LR: 3.19e-04
+Generated 8 samples
+Epoch 113/200 | Loss: 0.0764 | Val Loss: 0.0726 | LR: 3.13e-04
+Generated 8 samples
+Epoch 114/200 | Loss: 0.0761 | Val Loss: 0.0840 | LR: 3.07e-04
+Generated 8 samples
+Epoch 115/200 | Loss: 0.0765 | Val Loss: 0.0678 | LR: 3.01e-04
+Generated 8 samples
+Epoch 116/200 | Loss: 0.0762 | Val Loss: 0.0797 | LR: 2.94e-04
+Generated 8 samples
+Epoch 117/200 | Loss: 0.0719 | Val Loss: 0.0738 | LR: 2.88e-04
+Generated 8 samples
+Epoch 118/200 | Loss: 0.0748 | Val Loss: 0.0725 | LR: 2.82e-04
+Generated 8 samples
+Epoch 119/200 | Loss: 0.0734 | Val Loss: 0.0751 | LR: 2.76e-04
+Generated 8 samples
+Epoch 120/200 | Loss: 0.0766 | Val Loss: 0.0784 | LR: 2.70e-04
+Generated 8 samples
+Epoch 121/200 | Loss: 0.0750 | Val Loss: 0.0726 | LR: 2.65e-04
+Generated 8 samples
+Epoch 122/200 | Loss: 0.0737 | Val Loss: 0.0773 | LR: 2.59e-04
+Generated 8 samples
+Epoch 123/200 | Loss: 0.0751 | Val Loss: 0.0718 | LR: 2.53e-04
+Generated 8 samples
+Epoch 124/200 | Loss: 0.0783 | Val Loss: 0.0783 | LR: 2.47e-04
+Generated 8 samples
+Epoch 125/200 | Loss: 0.0737 | Val Loss: 0.0687 | LR: 2.41e-04
+Generated 8 samples
+Epoch 126/200 | Loss: 0.0726 | Val Loss: 0.0831 | LR: 2.35e-04
+Generated 8 samples
+Epoch 127/200 | Loss: 0.0744 | Val Loss: 0.0793 | LR: 2.30e-04
+Generated 8 samples
+Epoch 128/200 | Loss: 0.0766 | Val Loss: 0.0699 | LR: 2.24e-04
+Generated 8 samples
+Epoch 129/200 | Loss: 0.0731 | Val Loss: 0.0787 | LR: 2.18e-04
+Generated 8 samples
+Epoch 130/200 | Loss: 0.0739 | Val Loss: 0.0653 | LR: 2.13e-04
+Generated 8 samples
+Epoch 131/200 | Loss: 0.0732 | Val Loss: 0.0674 | LR: 2.07e-04
+Generated 8 samples
+Epoch 132/200 | Loss: 0.0767 | Val Loss: 0.0810 | LR: 2.02e-04
+Generated 8 samples
+Epoch 133/200 | Loss: 0.0705 | Val Loss: 0.0791 | LR: 1.96e-04
+Generated 8 samples
+Epoch 134/200 | Loss: 0.0736 | Val Loss: 0.0654 | LR: 1.91e-04
+Generated 8 samples
+Epoch 135/200 | Loss: 0.0766 | Val Loss: 0.0780 | LR: 1.86e-04
+Generated 8 samples
+Epoch 136/200 | Loss: 0.0732 | Val Loss: 0.0823 | LR: 1.80e-04
+Generated 8 samples
+Epoch 137/200 | Loss: 0.0720 | Val Loss: 0.0819 | LR: 1.75e-04
+Generated 8 samples
+Epoch 138/200 | Loss: 0.0736 | Val Loss: 0.0820 | LR: 1.70e-04
+Generated 8 samples
+Epoch 139/200 | Loss: 0.0715 | Val Loss: 0.0774 | LR: 1.65e-04
+Generated 8 samples
+Epoch 140/200 | Loss: 0.0729 | Val Loss: 0.0724 | LR: 1.60e-04
+Generated 8 samples
+Epoch 141/200 | Loss: 0.0728 | Val Loss: 0.0625 | LR: 1.55e-04
+Generated 8 samples
+Epoch 142/200 | Loss: 0.0698 | Val Loss: 0.0737 | LR: 1.50e-04
+Generated 8 samples
+Epoch 143/200 | Loss: 0.0715 | Val Loss: 0.0704 | LR: 1.45e-04
+Generated 8 samples
+Epoch 144/200 | Loss: 0.0731 | Val Loss: 0.0732 | LR: 1.40e-04
+Generated 8 samples
+Epoch 145/200 | Loss: 0.0736 | Val Loss: 0.0772 | LR: 1.35e-04
+Generated 8 samples
+Epoch 146/200 | Loss: 0.0723 | Val Loss: 0.0744 | LR: 1.31e-04
+Generated 8 samples
+Epoch 147/200 | Loss: 0.0719 | Val Loss: 0.0874 | LR: 1.26e-04
+Generated 8 samples
+Epoch 148/200 | Loss: 0.0715 | Val Loss: 0.0562 | LR: 1.22e-04
+Generated 8 samples
+Epoch 149/200 | Loss: 0.0685 | Val Loss: 0.0748 | LR: 1.17e-04
+Generated 8 samples
+Epoch 150/200 | Loss: 0.0716 | Val Loss: 0.0671 | LR: 1.13e-04
+Generated 8 samples
+Epoch 151/200 | Loss: 0.0751 | Val Loss: 0.0712 | LR: 1.08e-04
+Generated 8 samples
+Epoch 152/200 | Loss: 0.0728 | Val Loss: 0.0584 | LR: 1.04e-04
+Generated 8 samples
+Epoch 153/200 | Loss: 0.0736 | Val Loss: 0.0732 | LR: 1.00e-04
+Generated 8 samples
+Epoch 154/200 | Loss: 0.0735 | Val Loss: 0.0600 | LR: 9.58e-05
+Generated 8 samples
+Epoch 155/200 | Loss: 0.0728 | Val Loss: 0.0699 | LR: 9.18e-05
+Generated 8 samples
+Epoch 156/200 | Loss: 0.0726 | Val Loss: 0.0709 | LR: 8.78e-05
+Generated 8 samples
+Epoch 157/200 | Loss: 0.0701 | Val Loss: 0.0747 | LR: 8.39e-05
+Generated 8 samples
+Epoch 158/200 | Loss: 0.0722 | Val Loss: 0.0691 | LR: 8.01e-05
+Generated 8 samples
+Epoch 159/200 | Loss: 0.0710 | Val Loss: 0.0738 | LR: 7.64e-05
+Generated 8 samples
+Epoch 160/200 | Loss: 0.0716 | Val Loss: 0.0770 | LR: 7.27e-05
+Generated 8 samples
+Epoch 161/200 | Loss: 0.0729 | Val Loss: 0.0627 | LR: 6.92e-05
+Generated 8 samples
+Epoch 162/200 | Loss: 0.0701 | Val Loss: 0.0820 | LR: 6.57e-05
+Generated 8 samples
+Epoch 163/200 | Loss: 0.0730 | Val Loss: 0.0756 | LR: 6.23e-05
+Generated 8 samples
+Epoch 164/200 | Loss: 0.0693 | Val Loss: 0.0566 | LR: 5.89e-05
+Generated 8 samples
+Epoch 165/200 | Loss: 0.0710 | Val Loss: 0.0772 | LR: 5.57e-05
+Generated 8 samples
+Epoch 166/200 | Loss: 0.0715 | Val Loss: 0.0711 | LR: 5.25e-05
+Generated 8 samples
+Epoch 167/200 | Loss: 0.0686 | Val Loss: 0.0766 | LR: 4.95e-05
+Generated 8 samples
+Epoch 168/200 | Loss: 0.0715 | Val Loss: 0.0686 | LR: 4.65e-05
+Generated 8 samples
+Epoch 169/200 | Loss: 0.0688 | Val Loss: 0.0699 | LR: 4.36e-05
+Generated 8 samples
+Epoch 170/200 | Loss: 0.0712 | Val Loss: 0.0871 | LR: 4.08e-05
+Generated 8 samples
+Epoch 171/200 | Loss: 0.0694 | Val Loss: 0.0661 | LR: 3.81e-05
+Generated 8 samples
+Epoch 172/200 | Loss: 0.0713 | Val Loss: 0.0728 | LR: 3.54e-05
+Generated 8 samples
+Epoch 173/200 | Loss: 0.0728 | Val Loss: 0.0689 | LR: 3.29e-05
+Generated 8 samples
+Epoch 174/200 | Loss: 0.0700 | Val Loss: 0.0667 | LR: 3.04e-05
+Generated 8 samples
+Epoch 175/200 | Loss: 0.0729 | Val Loss: 0.0733 | LR: 2.81e-05
+Generated 8 samples
+Epoch 176/200 | Loss: 0.0707 | Val Loss: 0.0643 | LR: 2.58e-05
+Generated 8 samples
+Epoch 177/200 | Loss: 0.0690 | Val Loss: 0.0712 | LR: 2.36e-05
+Generated 8 samples
+Epoch 178/200 | Loss: 0.0700 | Val Loss: 0.0688 | LR: 2.16e-05
+Generated 8 samples
+Epoch 179/200 | Loss: 0.0700 | Val Loss: 0.0646 | LR: 1.96e-05
+Generated 8 samples
+Epoch 180/200 | Loss: 0.0703 | Val Loss: 0.0835 | LR: 1.77e-05
+Generated 8 samples
+Epoch 181/200 | Loss: 0.0706 | Val Loss: 0.0650 | LR: 1.59e-05
+Generated 8 samples
+Epoch 182/200 | Loss: 0.0672 | Val Loss: 0.0704 | LR: 1.42e-05
+Generated 8 samples
+Epoch 183/200 | Loss: 0.0700 | Val Loss: 0.0801 | LR: 1.26e-05
+Generated 8 samples
+Epoch 184/200 | Loss: 0.0714 | Val Loss: 0.0590 | LR: 1.11e-05
+Generated 8 samples
+Epoch 185/200 | Loss: 0.0699 | Val Loss: 0.0637 | LR: 9.63e-06
+Generated 8 samples
+Epoch 186/200 | Loss: 0.0722 | Val Loss: 0.0782 | LR: 8.31e-06
+Generated 8 samples
+Epoch 187/200 | Loss: 0.0705 | Val Loss: 0.0709 | LR: 7.09e-06
+Generated 8 samples
+Epoch 188/200 | Loss: 0.0701 | Val Loss: 0.0669 | LR: 5.96e-06
+Generated 8 samples
+Epoch 189/200 | Loss: 0.0699 | Val Loss: 0.0653 | LR: 4.92e-06
+Generated 8 samples
+Epoch 190/200 | Loss: 0.0708 | Val Loss: 0.0626 | LR: 3.99e-06
+Generated 8 samples
+Epoch 191/200 | Loss: 0.0689 | Val Loss: 0.0528 | LR: 3.15e-06
+Generated 8 samples
+Epoch 192/200 | Loss: 0.0682 | Val Loss: 0.0689 | LR: 2.42e-06
+Generated 8 samples
+Epoch 193/200 | Loss: 0.0714 | Val Loss: 0.0758 | LR: 1.78e-06
+Generated 8 samples
+Epoch 194/200 | Loss: 0.0747 | Val Loss: 0.0643 | LR: 1.23e-06
+Generated 8 samples
+Epoch 195/200 | Loss: 0.0728 | Val Loss: 0.0945 | LR: 7.89e-07
+Generated 8 samples
+Epoch 196/200 | Loss: 0.0678 | Val Loss: 0.0682 | LR: 4.44e-07
+Generated 8 samples
+Epoch 197/200 | Loss: 0.0718 | Val Loss: 0.0686 | LR: 1.97e-07
+Generated 8 samples
+Epoch 198/200 | Loss: 0.0690 | Val Loss: 0.0669 | LR: 4.93e-08
+Generated 8 samples
+Epoch 199/200 | Loss: 0.0707 | Val Loss: 0.0614 | LR: 0.00e+00
+Generated 8 samples
+Training complete!
