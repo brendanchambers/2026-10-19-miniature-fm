@@ -1,0 +1,5 @@
+# pack-refs with: peeled fully-peeled sorted 
+0847967cee698343cba34ab5a45e3b304e171e2a refs/remotes/origin/dependabot/pip/gradio-6.15.1
+5fc7c64f2a218da0b14837f5e6308ebc73623604 refs/remotes/origin/dependabot/pip/torch-2.13.0
+a07cdb6690ce5555f3127acb4fa0006e68235354 refs/remotes/origin/dependabot/pip/transformers-5.10.1
+55f56f60e1bbf98d1c1991670ac998094d5f59ae refs/remotes/origin/main
