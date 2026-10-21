@@ -157,10 +157,45 @@ def train_on_modal(experiment_tag: str = "teensy"):
     print(f'Training data loaded: {len(train_dataset)} images in {len(train_loader)} batches')
     print(f'Validation data loaded: {len(val_dataset)} images in {len(val_loader)} batches')
 
+    # def calc_loss(y: torch.Tensor):
+    #     B, C, H, W = y.shape
+    #     y = y.to(device, non_blocking=True).float() / 255.0
+    #     z = torch.randn(B, C, H, W, device=device)
+    #     t = torch.rand(B, device=device)
+    #     v = y - z
+    #     x = z + v * t.view(B, 1, 1, 1)
+    #     v_pred = model(x, t)
+    #     loss = F.mse_loss(v_pred, v)
+    #     return loss
+
+    # ot loss
     def calc_loss(y: torch.Tensor):
         B, C, H, W = y.shape
         y = y.to(device, non_blocking=True).float() / 255.0
         z = torch.randn(B, C, H, W, device=device)
+
+        # ---- Match z to y based on optimal transport distance, reordering z on the batch dimension.import torch
+        from scipy.optimize import linear_sum_assignment
+
+        # 1. Flatten the spatial and channel dimensions to compute pairwise distances
+        y_flat = y.view(B, -1)
+        z_flat = z.view(B, -1)
+
+        # 2. Compute the cost matrix (Squared L2 distance is standard for Optimal Transport)
+        # torch.cdist computes the standard L2 norm, so we square it.
+        cost_matrix = torch.cdist(y_flat, z_flat, p=2) ** 2
+
+        # 3. Solve the assignment problem on the CPU
+        # linear_sum_assignment finds the minimum cost matching.
+        cost_matrix_np = cost_matrix.cpu().numpy()
+        row_ind, col_ind = linear_sum_assignment(cost_matrix_np)
+
+        # `row_ind` corresponds to the indices of `y` (which will be [0, 1, ..., B-1])
+        # `col_ind` contains the index of `z` that optimally pairs with each `y`
+
+        # 4. Reorder z so that z[i] is optimally paired with y[i]
+        z = z[col_ind]
+
         t = torch.rand(B, device=device)
         v = y - z
         x = z + v * t.view(B, 1, 1, 1)
