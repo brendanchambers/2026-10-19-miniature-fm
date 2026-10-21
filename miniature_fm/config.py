@@ -22,16 +22,18 @@ class Config:
     # Training
     data_path: str = "../volumes/data/intermediates/visual_poetry/step2_numpy_array.npy"
     batch_size: int = 256
-    lr: float = 2e-4 
-    weight_decay: float = 0 # 1e-2
-    epochs: int = 50
+    lr: float = 8e-4
+    weight_decay: float = 1e-2
+    epochs: int = 200
+    warmup_steps: int = 40
+    decay_steps: int = 10
 
     # Experiment organization
     experiment_tag: str = "teensy"
     experiment_dir: str = None  # Auto-generated in __post_init__
 
-    save_ckpt_interval: int = 100 # set to 0 to disable
-    save_plot_interval: int = 10 # set to 0 to disable
+    save_ckpt_interval: int = 1000 # set to 0 to disable
+    save_plot_interval: int = 50 # set to 0 to disable
 
     # You should not change the following parameters
     #   because the cat dataset has a fixed size of 64x64x3

@@ -113,11 +113,14 @@ def train_on_modal(experiment_tag: str = "teensy"):
         fused=True  # Enable fused optimizer for GPU
     )
 
+    # Calculate stable steps from total epochs minus warmup and decay
+    num_stable_steps = cfg.epochs - cfg.warmup_steps - cfg.decay_steps
+
     scheduler = get_wsd_schedule(
         optimizer=optimizer,
-        num_warmup_steps=10,
-        num_stable_steps=30,
-        num_decay_steps=10,
+        num_warmup_steps=cfg.warmup_steps,
+        num_stable_steps=num_stable_steps,
+        num_decay_steps=cfg.decay_steps,
         min_lr_ratio=0.0,
         cooldown_type="1-sqrt",
     )
@@ -302,6 +305,33 @@ def main(experiment_tag: str = "teensy"):
     print("\n" + "="*70)
     print(f"✓ Training complete! Run ID: {run_id}")
     print("="*70)
-    print(f"\nDownload results:")
-    print(f"  uv run modal run miniature_fm/sync_from_modal.py --run-id {run_id}")
+
+    # Automatically sync results from Modal
+    print("\nSyncing results from Modal...")
+    from miniature_fm.sync_from_modal import list_files, read_file
+    from pathlib import Path
+
+    files = list_files.remote(run_id)
+
+    if files is None:
+        print(f"Error: Run '{run_id}' not found in Modal volume")
+        print(f"Manual download: uv run modal run miniature_fm/sync_from_modal.py --run-id {run_id}")
+        return
+
+    print(f"Found {len(files)} files to download")
+
+    for filepath in files:
+        local_path = Path("volumes") / filepath
+        local_path.parent.mkdir(parents=True, exist_ok=True)
+
+        print(f"  Downloading: {filepath}")
+        content = read_file.remote(filepath)
+
+        with open(local_path, 'wb') as f:
+            f.write(content)
+
+    print(f"\n✓ Download complete! Results saved to volumes/models/{run_id}/")
+    print(f"View metrics: cat volumes/models/{run_id}/loss_plots/metrics.jsonl")
+    print(f"View loss plot: open volumes/models/{run_id}/loss_plots/losses_final.png")
+    print(f"View samples: open volumes/models/{run_id}/plots/")
     print()
