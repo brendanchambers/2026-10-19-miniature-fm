@@ -11,4 +11,5 @@ dependencies = [
     "torch",
     "matplotlib",
     "pytorch-optimizer>=4.0.0",
+    "modal",
 ]

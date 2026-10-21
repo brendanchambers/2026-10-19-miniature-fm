@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from torch.utils.checkpoint import checkpoint
 import math
-from config import Config
+from miniature_fm.config import Config
 
 class SinusoidalEmbedding(nn.Module):
     def __init__(self, dim):

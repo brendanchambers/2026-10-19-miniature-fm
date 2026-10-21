@@ -14,14 +14,19 @@
 uv run python miniature_fm/preprocess_pngs.py  
 uv run python miniature_fm/prepare_training_data.py  
   
-uv run python train.py  
+# Upload data to Modal volume (first time or when data changes)
+uv run modal run miniature_fm/sync_to_modal.py
+
 ```  
 
 ## launch  
 
 ```
-cd miniature_fm  
-uv run python train.py  
+# Train on Modal GPU (automatically syncs latest code)
+uv run modal run miniature_fm/train_modal.py
+
+# Download results
+uv run modal run miniature_fm/sync_from_modal.py --run-id <run_id>
 ```  
 
 

@@ -5,9 +5,15 @@ import os
 @dataclass
 class Config:
 
+    # comparison with geometrytransformer from worldmirror 2.0:
+    # patch_size=14,
+    # embed_dim=1024,
+    # depth=24,
+    # num_heads=16,
+
     # Model
-    hidden_dim: int = 16 # 512
-    emb_hidden_dim:int = 8 # 128
+    hidden_dim: int = 512
+    emb_hidden_dim:int = 128
     num_heads: int = 8
     num_layers: int = 6
     patch_size: int = 4
@@ -15,16 +21,17 @@ class Config:
 
     # Training
     data_path: str = "../volumes/data/intermediates/visual_poetry/step2_numpy_array.npy"
-    batch_size: int = 64  # Reduced for CPU training
-    lr: float = 2e-3 # 2e-4
+    batch_size: int = 256
+    lr: float = 2e-4 
     weight_decay: float = 0 # 1e-2
-    epochs: int = 5 # 200
+    epochs: int = 50
 
     # Experiment organization
     experiment_tag: str = "teensy"
     experiment_dir: str = None  # Auto-generated in __post_init__
 
-    save_ckpt_interval: int = 0 # set to 0 to disable
+    save_ckpt_interval: int = 100 # set to 0 to disable
+    save_plot_interval: int = 10 # set to 0 to disable
 
     # You should not change the following parameters
     #   because the cat dataset has a fixed size of 64x64x3
