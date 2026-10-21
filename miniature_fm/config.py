@@ -34,6 +34,7 @@ class Config:
 
     save_ckpt_interval: int = 1000 # set to 0 to disable
     save_plot_interval: int = 50 # set to 0 to disable
+    logging_interval: int = 5 # log metrics every N epochs
 
     # You should not change the following parameters
     #   because the cat dataset has a fixed size of 64x64x3

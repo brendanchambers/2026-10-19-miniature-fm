@@ -207,8 +207,8 @@ def train_on_modal(experiment_tag: str = "teensy"):
         current_lr = scheduler.get_last_lr()[0]
         learning_rates.append(current_lr)
 
-        # Log metrics to JSONL
-        if cfg.loss_plot_dir:
+        # Log metrics to JSONL at specified interval
+        if cfg.loss_plot_dir and (epoch % cfg.logging_interval == 0 or epoch == cfg.epochs - 1):
             with open(metrics_log_path, 'a') as f:
                 json.dump({
                     'epoch': epoch,
@@ -218,7 +218,8 @@ def train_on_modal(experiment_tag: str = "teensy"):
                 }, f)
                 f.write('\n')
 
-        print(f"Epoch {epoch:03d}/{cfg.epochs} | Loss: {avg_loss:.4f} | Val Loss: {avg_val_loss:.4f} | LR: {current_lr:.2e}")
+        if epoch % cfg.logging_interval == 0 or epoch == cfg.epochs - 1:
+            print(f"Epoch {epoch:03d}/{cfg.epochs} | Loss: {avg_loss:.4f} | Val Loss: {avg_val_loss:.4f} | LR: {current_lr:.2e}")
 
         if cfg.save_ckpt_interval > 0 and cfg.ckpt_dir and (epoch % cfg.save_ckpt_interval == 0 or epoch == cfg.epochs - 1):
             torch.save(model.state_dict(), f"{cfg.ckpt_dir}/epoch_{epoch:03d}.pt")
@@ -297,9 +298,37 @@ def save_loss_plot(cfg, train_losses, val_losses, learning_rates):
     plt.close(fig)
 
 
+@app.function(volumes={"/volumes": volume})
+def list_files(run_id: str):
+    """List files in the run directory"""
+    import os
+    remote_dir = f"/volumes/models/{run_id}"
+
+    if not os.path.exists(remote_dir):
+        return None
+
+    files = []
+    for root, dirs, filenames in os.walk(remote_dir):
+        for filename in filenames:
+            full_path = os.path.join(root, filename)
+            rel_path = os.path.relpath(full_path, "/volumes")
+            files.append(rel_path)
+
+    return files
+
+
+@app.function(volumes={"/volumes": volume})
+def read_file(filepath: str):
+    """Read a file from the volume"""
+    with open(f"/volumes/{filepath}", 'rb') as f:
+        return f.read()
+
+
 @app.local_entrypoint()
 def main(experiment_tag: str = "teensy"):
     """Local entrypoint to run training on Modal"""
+    from pathlib import Path
+
     print(f"Starting Modal training run with experiment_tag: {experiment_tag}")
     run_id = train_on_modal.remote(experiment_tag)
     print("\n" + "="*70)
@@ -308,8 +337,6 @@ def main(experiment_tag: str = "teensy"):
 
     # Automatically sync results from Modal
     print("\nSyncing results from Modal...")
-    from miniature_fm.sync_from_modal import list_files, read_file
-    from pathlib import Path
 
     files = list_files.remote(run_id)
 
